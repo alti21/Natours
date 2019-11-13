@@ -1,6 +1,6 @@
 .row {
     max-width: $grid-width;//1140px
-    background-color: #eee;
+    //background-color: #eee;
     margin: 0 auto;//center block element inside another block element
 
     &:not(:last-child) {
@@ -12,14 +12,14 @@
     @include clearfix;//moves first row much higher so it stops overlapping second row
 
     [class^="col-"] { //selects all elements which have a class starting with "col-"
-        background-color: orangered;
+        //background-color: orangered;
         float: left;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
     }
-//use * to select elements that have a class containing "col-", use $ to select elements that have a class ending with "col-"
+    //use * to select elements that have a class containing "col-", use $ to select elements that have a class ending with "col-"
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);//calculation occurs when website is rendered using visual formating model
        
